@@ -15,11 +15,11 @@ const Navbar = () => {
           </Link>
           
           <div className="flex gap-6">
-            <Link to="/" className="flex items-center gap-1 text-white hover:text-yellow-200 transition">
+            <Link to="/" className={`flex items-center gap-1 text-white hover:text-yellow-200 transition ${location.pathname === '/' ? 'text-yellow-200' : ''}`}>
               <Home size={20} />
               <span>Home</span>
             </Link>
-            <Link to="/bookmarks" className="flex items-center gap-1 text-white hover:text-yellow-200 transition">
+            <Link to="/bookmarks" className={`flex items-center gap-1 text-white hover:text-yellow-200 transition ${location.pathname === '/bookmarks' ? 'text-yellow-200' : ''}`}>
               <Bookmark size={20} />
               <span>Bookmarks</span>
             </Link>
